@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="#{index.page.title}">Title</title>
+    <meta name="description" content="Tomas Kadlcek Portfolio website">
+    <meta name="author" content="templatemo">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet'
+          type='text/css'>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" media="screen"
+          th:href="@{/css/bootstrap.min.css}"/>
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet" media="screen"
+          th:href="@{/css/font-awesome.min.css}"/>
+    <link href="../static/css/templatemo-style.css" rel="stylesheet" media="screen"
+          th:href="@{/css/templatemo-style.css}"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="templatemo-container">
+<!-- header -->
+<div class="header-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4 site-name-container">
+                <h1 class="site-name">T. Kadlcek</h1>
+            </div>
+            <div class="mobile-menu-icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-8 templatemo-nav-container">
+                <nav class="templatemo-nav">
+                    <ul>
+                        <li><a th:href="index">About me</a></li>
+                        <li><a th:href="experience">Skills</a></li>
+                        <li><a th:href="projects" class="active">Projects</a></li>
+                        <li><a th:href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+<!-- main content -->
+<section class="templatemo-container section-shadow-bottom">
+    <div class="container">
+        <div class="row section-title-container">
+            <div class="col-lg-12 text-uppercase text-center">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-title-underline-blue"></div>
+                <hr class="section-title-underline">
+                <p class="small">Tomáš Kadlček</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Portfolio Website</span> <span
+                            class="font-weight-300 blue-text"><br>Java, HTML, css, AWS, Docker, Git...</span></h3>
+                    <img src="img/website.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">This website was customised by myself using my prior knowledge of HTML and css. This site runs on
+                    Amazon Servers. For the backend I have used Java Spring Thymeleaf. For convenience I have used a template to build and customise
+                    the front end of this site from <a href="https://templatemo.com/">Templatemo</a>.</p>
+                    <p>As for the server side I'm currently implementing and learning how to use Docker for all my server side projects. The goal is to separate
+                    and put into containers all my projects.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek">Portfolio Website</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Messenger API server side</span><span
+                            class="font-weight-300 blue-text"><br>Java, JUnit, Mockito, Spring, Maven, MySQL, AWS, Git...</span></h3>
+                    <img src="img/spring.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">During learning Spring Framework I've spent several weeks learning and improving on my coding skills.
+                    The main goal was for me to learn a better structured code, improve my OOP skills, testing, connect code to database etc. So far this project was
+                    the biggest for me as I learned many new technologies like AWS, SQL, Spring and others. This project is directly connected to my Android messenger project.
+                        Main purpose is to send and retrieve data from my custom made MySQL database to my Android messenger project and back.
+                    </p>
+                    <p>The whole project was made by me and served primarily as a way to introduce myself to other areas of programming.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/MessengerAPI/tree/main">Messenger API</a></p>
+                </div>
+            </div>
+        </div>
+        <hr class="section-title-underline">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Android Messenger</span> <span
+                            class="font-weight-300 blue-text"><br>Java, Android, Volley, Gradle, Git...</span>
+                    </h3>
+                    <img src="img/messengerui.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">This project was made in connection with my Messenger API project. It is a lightweight Messenger type app
+                    for android done in Java. There are few functions like register, login, friend list, friend adding etc. All of them are connected
+                    to a MySQL database using Volley to parse JSON and Spring in the Backend.</p>
+                    <p>During my learning path with this project I learned a lot about how Android and API works.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/MessengerUI/tree/main">Android Messenger</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Monopoly</span> <span
+                            class="font-weight-300 blue-text"><br>Java, JavaFX, OOP...</span></h3>
+                    <img src="img/monopoly.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">For a person who frequently plays board games was this project a no-brainer.
+                    I chose this as my first proper Java project. After few smaller practice projects I decided I want to do something bigger.
+                    My main goal was to learn how to better use classes, objects and try to replicate all the monopoly rules into code.
+                    The overall structure and readability was also a big goal for me. </p>
+                    <p>Having a look back at my code I can see things I'd make differently today. The code lacks any Maven dependencies, might use a better structure
+                    and would need some other changes. But all in all I am proud of this being my first Java project.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/Monopoly/tree/main">Monopoly</a></p>
+                </div>
+            </div>
+        </div>
+        <hr class="section-title-underline">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Alza Web Scrapping</span> <span
+                            class="font-weight-300 blue-text"><br>Python, HTML, BeautifulSoup, Selenium, Regex, Numpy, Pandas...</span>
+                    </h3>
+                    <img src="img/alza.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">This project is part of my Scrapping and data analysis project. Unfortunately due to
+                    Hardware malfunction and not using Git at the time I've lost my data analysis which was done with Numpy and Pandas libraries.</p>
+                    <p>Using Python I've managed to scrape several weeks of data changes in the smart watches section and make a data analysis.
+                    Using what I've found I've been able to track a good time to buy a new watch.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/AlzaScrape/tree/main">Alza Web Scrapping</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Sudoku Solver</span> <span
+                            class="font-weight-300 blue-text"><br>Python...</span></h3>
+                    <img src="img/sudoku.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">As with the monopoly project I've decided to make a program with a topic close to my hearth.
+                    Sudoku Solver is a simple command line app used to solve sudoku by itself.
+                    Mostly consisting from simple Core Python it was still a challenge to solve all the brainteasing problems.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/SudokuSolver/tree/master">Sudoku</a></p>
+                </div>
+            </div>
+        </div>
+        <hr class="section-title-underline">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Hangman</span> <span
+                            class="font-weight-300 blue-text"><br>Python, Tkinter, Turtle...</span>
+                    </h3>
+                    <img src="img/hangman.png" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">One of my earliest projects. Just a simple game of Hangman. Using a random word and simple graphics
+                    to recreate the fun of playing a real Hangman game.</p>
+                    <p class="justify-text">Warning for all people looking at this project: This project was done with only basic knowledge in programming.
+                    Today I would do t totally differently. It still is a part of my learning curve.</p>
+                    <p class="justify-text"><br>For More info: <a href="https://github.com/TomasKadlcek/Hangman-game/tree/main">Hangman</a></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="recent-post-container">
+                    <h3 class="text-uppercase recent-post-title margin-bottom-30"><span
+                            class="font-weight-700">Current Projects</span> <span
+                            class="font-weight-300 blue-text"><br>Java, Python, HTML, css, Docker, AWS, Git etc...</span></h3>
+                    <img src="img/program.jpg" alt="Image" class="img-responsive margin-bottom-30">
+                    <p class="justify-text">This time around I'm working on improving my coding skills mostly in Java, but not forgetting about Python.
+                    There are multiple projects now I'm working on. One of them is learning Docker and Kubernetes at the moment to
+                    solve the isolation and deployment of my projects to my AWS server.</p>
+                    <p>I'm also working on a project for my client which is a website, database and android app for their product.
+                    This project is still in the starting phase. But should be finished around January.</p>
+                    <p>My main goal at this moment is to improve on my current skill set and to find a good company to work for
+                    and get used to the programming environment.</p>
+                    <p class="justify-text"><br>For more info about my projects: <a href="https://github.com/TomasKadlcek">GitHub</a></p>
+                    <p>You can find my contact details here: <a th:href="contact">Contact</a></p>
+                </div>
+            </div>
+        </div>
+        <hr class="section-title-underline">
+        <!-- end section content -->
+    </div>
+</section>
+
+<!-- end main content -->
+<footer class="text-center">
+    <p class="small copyright-text">Copyright &copy; 2020 Tomáš Kadlček</p>
+</footer>
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+<script type="text/javascript" src="js/responsiveCarousel.min.js"></script>      <!-- Carousel -->
+<script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+<script>
+
+            $(function() {
+                $('.crsl-items').carousel({
+                    visible: 1,
+                    itemMinWidth: 320,
+                    itemEqualHeight: 320,
+                    itemMargin: 9,
+                });
+                $(".crsl-nav a[href=#]").on('click', function(e) {
+                    e.preventDefault();
+                });
+            });
+
+
+</script>
+</body>
+</html>
